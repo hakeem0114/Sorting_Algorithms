@@ -51,5 +51,8 @@ const arr = [8, 20, -2 , 4, -6, 5]
 bubbleSort(arr)
 console.log(arr)
 
+console.log(" Big O = O(n^2) since a for loop is nested into a do while ")
+console.log("Space Complexity = O(1) since input does not add to memory")
+
 
 console.log("***************************")
