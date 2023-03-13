@@ -42,5 +42,5 @@ console.log(cartesianProduct(a,b))
 console.log("answer")
 
 console.log("Big O is O(m*n) since it depends on length of array 1 & 2 ")
-console.log("Space complexity is ")
+console.log("Space complexity is O(1)  ")
 console.log("***************************")
