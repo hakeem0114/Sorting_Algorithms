@@ -67,6 +67,8 @@ function quickSort(arr){
 
      //For in  = classic for loop = returns index
      //For of = return elements/ values
+
+     //Below method is called partioning = breaking into smaller pieces
     for(let element of arr.slice(0, arr.length-1)){  //Loop from 1st to last element in array using splice or slice
         if( element < pivot){
             left.push(element)
@@ -75,7 +77,7 @@ function quickSort(arr){
         }
     }
 
-
+    //Below method is called partioning = breaking into smaller pieces
     //Re-run left & right array sorts before concatenating their #s into 1 array
     return [...quickSort(left), pivot, ...quickSort(right)]   //spreads values from sorts as a new array of elements
     //      [ -15, -6, -2 ,     4     ,  8, 20, 110]
@@ -86,6 +88,7 @@ const arr = [-6, 20,8,-2,4,110, -15]
 
 console.log(quickSort(arr))
 
-console.log("Big O is O() ")
-console.log("Space complexity is ")
+console.log("Worst Case = O(n^2) happens after fully sorting the array \n You end up partitioning into a full & empty array before ending  ")
+console.log("Average Case = O(n logn) since the for loop is O(n) & the recursion is partioning input = O(logn) ")
+console.log("Space complexity is O(logn) since the input gets halved")
 console.log("***************************")
